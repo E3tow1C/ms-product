@@ -3,7 +3,7 @@ import httpx
 from mcp.server.fastmcp import FastMCP
 
 
-mcp - FastMCP("ms-products")
+mcp = FastMCP("ms-products")
 mock_api_url = "https://589d8ea5400db4120026146d.mockapi.io/api/products"
 
 
@@ -13,4 +13,4 @@ def get_products():
     return response.json()
 
 if __name__ == "__main__":
-    mcp.run(transport="stdin")
+    mcp.run(transport="stdio")
